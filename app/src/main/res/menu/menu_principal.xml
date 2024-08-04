@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/interfaz_citas"
+        android:icon="@drawable/citas"
+        android:title="Citas" />
+    <item
+        android:id="@+id/interfaz_dar_adopcion"
+        android:icon="@drawable/dar_adopcion"
+        android:title="Adopcion" />
+    <item
+        android:id="@+id/interfaz_adoptar"
+        android:icon="@drawable/adoptar"
+        android:title="Adoptar" />
+    <item
+        android:id="@+id/interfaz_pendientes"
+        android:icon="@drawable/pendientes"
+        android:title="Pendientes" />
+</menu>

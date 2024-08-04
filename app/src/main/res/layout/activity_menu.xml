@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MenuActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar1"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#146C94"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="@style/AppTheme.Toolbar"
+            app:maxButtonHeight="70dp" />
+
+        <FrameLayout
+            android:id="@+id/frame1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/btnNavigationMenu"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#F6F1F1"
+            android:isScrollContainer="false"
+            android:pointerIcon="none"
+            app:compatShadowEnabled="true"
+            app:itemIconSize="35dp"
+            app:itemIconTint="@color/black"
+            app:labelVisibilityMode="selected"
+            app:menu="@menu/menu_principal" />
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigationview1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:layout_weight="1"
+        android:background="@drawable/fondo_lateral"
+        app:headerLayout="@layout/foto_menu_lateral"
+        app:menu="@menu/menu_lateral" />
+</androidx.drawerlayout.widget.DrawerLayout>
+

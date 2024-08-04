@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "371495177614",
+    "firebase_url": "https://vet-android-default-rtdb.firebaseio.com",
+    "project_id": "vet-android",
+    "storage_bucket": "vet-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:371495177614:android:cfbd6a5ad898710a23e8df",
+        "android_client_info": {
+          "package_name": "firebase.app.veterinaria_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "371495177614-ot68s4k2ck8vk9k9mabkbt8p1536nrf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0mUzQI6u6qbVK-s0amTeZNTUQkq8_puk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "371495177614-ot68s4k2ck8vk9k9mabkbt8p1536nrf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

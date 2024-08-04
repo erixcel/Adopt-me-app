@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_inicio"
+        android:icon="@drawable/inicio"
+        android:title="@string/inicio" />
+    <item
+        android:id="@+id/menu_mascotas"
+        android:icon="@drawable/huella"
+        android:title="@string/mascotas" />
+    <item
+        android:id="@+id/menu_web"
+        android:icon="@drawable/website"
+        android:title="@string/web" />
+    <item
+        android:id="@+id/menu_libros"
+        android:icon="@drawable/libro_vet"
+        android:title="@string/libros_medico" />
+    <item
+        android:id="@+id/menu_configuracion"
+        android:icon="@drawable/configuracion"
+        android:title="@string/configuracion" />
+    <item
+        android:id="@+id/menu_cerrar_sesion"
+        android:icon="@drawable/logout"
+        android:title="@string/cerrar_sesion" />
+</menu>

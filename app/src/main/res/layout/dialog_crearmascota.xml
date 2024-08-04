@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardFormMascota"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#F6F1F1"
+    android:windowSoftInputMode="adjustResize"
+    tools:context=".Dialog_crearmascota">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblRegistrarMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="REGISTRAR MASCOTA"
+            android:textAlignment="center"
+            android:textColor="#146C94"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="visible"/>
+        <TextView
+            android:id="@+id/lblEditarMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:text="EDITAR MASCOTA"
+            android:textAlignment="center"
+            android:textColor="#146C94"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutNombre"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            app:boxStrokeColor="@color/input_form"
+            app:hintTextColor="@color/input_form">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEdad"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:hint="Edad"
+                app:boxStrokeColor="@color/input_form"
+                app:hintTextColor="@color/input_form">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtEdad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutSexo"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Sexo"
+                app:boxStrokeColor="@color/input_form"
+                app:hintTextColor="@color/input_form">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtSexo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:inputType="none"
+                    app:simpleItems="@array/arraySexo" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutEspecie"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Especie"
+                app:boxStrokeColor="@color/input_form"
+                app:hintTextColor="@color/input_form">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtEspecie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="14dp"
+                    android:inputType="none"
+                    app:simpleItems="@array/arrayEspecie" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- android:theme="@style/input.text"-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/layoutRaza"
+
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Raza"
+                app:boxStrokeColor="@color/input_form"
+                app:hintTextColor="@color/input_form">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtRaza"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="10dp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgFoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginVertical="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:padding="1px"
+                    android:scaleType="centerCrop"
+                    app:shapeAppearanceOverlay="@style/borderRadioImageView"
+                    app:strokeColor="#a09c9c"
+                    app:strokeWidth="1dp" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAbrirGaleria"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    app:icon="@drawable/galeria"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp"
+                    app:iconTint="@null" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAbrirCamara"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    app:icon="@drawable/camara"
+                    app:iconGravity="textStart"
+                    app:iconPadding="0dp"
+                    app:iconSize="50dp"
+                    app:iconTint="@null" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegistrar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="REGISTRAR"
+            app:backgroundTint="#146C94"
+            app:cornerRadius="4dp"
+            android:visibility="visible"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnActualizar"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:text="ACTUALIZAR"
+            app:backgroundTint="#146C94"
+            app:cornerRadius="4dp"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="arraySexo">
+        <item>Macho</item>
+        <item>Hembra</item>
+    </string-array>
+    <string-array name="arrayEspecie">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>Otro</item>
+    </string-array>
+    <string-array name="arrayPaises">
+        <item>Argentina</item>
+        <item>Brazil</item>
+        <item>Chile</item>
+        <item>Colombia</item>
+        <item>Cuba</item>
+        <item>Ecuador</item>
+        <item>El Salvador</item>
+        <item>Guatemala</item>
+        <item>Honduras</item>
+        <item>Mexico</item>
+        <item>Nicaragua</item>
+        <item>Panama</item>
+        <item>Paraguay</item>
+        <item>Peru</item>
+        <item>Uruguay</item>
+        <item>Venezuela</item>
+        <item>Otro</item>
+    </string-array>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Santos Cachorros</string>
+    <string name="iniciar_sesion">INICIAR SESION</string>
+    <string name="registrarse">REGISTRARSE</string>
+    <string name="correo">Correo</string>
+    <string name="contraseña">Contraseña</string>
+    <string name="confirmar_contraseña">Confirmar contraseña</string>
+    <string name="ingresar">INGRESAR</string>
+    <string name="crear_cuenta">CREAR CUENTA</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    #NAVIGATIONVIEW
+    <string name="inicio">INICIO</string>
+    <string name="mascotas">MASCOTAS</string>
+    <string name="web">PAGINA WEB</string>
+    <string name="libros_medico">LIBROS MEDICOS</string>
+    <string name="configuracion">CONFIGURACION</string>
+    <string name="cerrar_sesion">CERRAR SESION</string>
+
+
+</resources>
